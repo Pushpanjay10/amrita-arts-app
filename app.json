@@ -1,38 +1,48 @@
 {
-	"expo": {
-		"name": "Amrita Arts",
-		"slug": "AmritaArts",
-		"version": "1.0.0",
-		"orientation": "portrait",
-		"icon": "./assets/app_icon.png",
-		"userInterfaceStyle": "dark",
-		"splash": {
-			"image": "./assets/splash_mid.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#242526"
-		},
-		"assetBundlePatterns": ["**/*"],
-		"ios": {
-			"supportsTablet": true
-		},
-		"android": {
-			"adaptiveIcon": {
-				"foregroundImage": "./assets/app_icon.png",
-				"backgroundColor": "#FFFFFF"
-			},
-			"package": "com.adarsh3699.BhemuNotes"
-		},
-		"web": {
-			"favicon": "./assets/app_icon.png"
-		},
-		"plugins": [
-			[
-				"expo-image-picker",
-				{
-					"photosPermission": "The app accesses your photos to let you share them with your friends.",
-					"cameraPermission": "Allow $(PRODUCT_NAME) to open the camera"
-				}
-			]
-		]
-	}
+  "expo": {
+    "name": "Amrita Arts",
+    "slug": "AmritaArts",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app_icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash_mid.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#242526"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/app_icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.adarsh3699.BhemuNotes",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/app_icon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "cameraPermission": "Allow $(PRODUCT_NAME) to open the camera"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0ec6133f-c3e0-4330-983c-9e6d34b47f83"
+      }
+    }
+  }
 }
