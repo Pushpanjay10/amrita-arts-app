@@ -105,7 +105,7 @@ async function handleDeleteImage(imgId, handleMsgShown, netInfo) {
 			await deleteDoc(doc(database, 'picture_links', imgId))
 				.then(() => {
 					console.log('Document successfully deleted!');
-					handleMsgShown('Image eleted successfully');
+					handleMsgShown('Image deleted successfully');
 				})
 				.catch((error) => {
 					console.error('Error removing document: ', error);
